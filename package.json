@@ -8,11 +8,11 @@
     "build": "vite build && node -e \"import('fs').then(m => m.copyFileSync('dist/index.html', 'dist/404.html'))\"",
     "build:ssg": "vite-react-ssg build --config vite.config.ssg.ts",
     "build:storybook": "storybook build",
-    "start": "vite dev",   
+    "start": "vite dev",
     "start:prerender": "vite build --mode deploy && vite preview --mode deploy",
     "preview": "vite preview",
     "start:ssg": "vite-react-ssg dev --config vite.config.ssg.ts",
-    "start:dev:vite": "concurrently \"npm run start:vite\" \"npm run start:dev:server\"",
+    "start:dev": "concurrently \"npm run start\" \"npm run start:dev:server\"",
     "start:dev:server": "node ./json-server/index.js",
     "deploy": "gh-pages -d dist -r https://github.com/10takla/cv.git",
     "predeploy": "vite build --mode deploy && node -e \"import('fs').then(m => m.copyFileSync('dist/index.html', 'dist/404.html'))\"",
@@ -45,6 +45,7 @@
     "typescript": "^5.4.5",
     "vite": "^6.3.6",
     "vite-plugin-svgr": "*",
-    "vite-react-ssg": "*"
+    "vite-react-ssg": "*",
+    "concurrently": "*"
   }
 }
