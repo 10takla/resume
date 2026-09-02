@@ -106,6 +106,8 @@ const aiSkills = {
     // --- Агентные менеджеры / AI IDE ---
     "Antigravity": { stars: 5, isId: true },
     "Codex": { stars: 5, isId: true },
+    "Claude Code": { stars: 4, isId: true },
+    "OpenCode": { stars: 4, isId: true },
 
     // --- Чат-интерфейсы / Playground ---
     "Google AI Studio": { stars: 5, isId: true },
