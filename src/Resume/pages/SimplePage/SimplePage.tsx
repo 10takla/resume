@@ -424,6 +424,23 @@ const SimplePage = (props: SimplePageProps, ref: ForwardedRef<ElRef>) => {
                                                 </div>
                                             ))
                                     }
+                                    <div >
+                                        <span style={{ fontSize: "0.85em", fontWeight: "bold" }}>
+                                            <T ru="Проекты" en="Projects" />:
+                                        </span>{" "}
+                                        {[
+                                            { name: "ai_drafts", link: "https://github.com/10takla/ai_drafts" },
+                                            { name: "ai_manager", link: "https://github.com/10takla/ai_manager" },
+                                            { name: "impl_instrs", link: "https://github.com/10takla/impl_instrs" },
+                                        ].map((project, idx, arr) => (
+                                            <Fragment key={project.name}>
+                                                <a href={project.link} target="_blank" rel="noreferrer">
+                                                    {project.name}
+                                                </a>
+                                                {idx < arr.length - 1 ? ", " : ""}
+                                            </Fragment>
+                                        ))}
+                                    </div>
                                 </VStack>
                             </VStack>
                         ],
