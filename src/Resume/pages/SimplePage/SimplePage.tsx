@@ -432,6 +432,7 @@ const SimplePage = (props: SimplePageProps, ref: ForwardedRef<ElRef>) => {
                                             { name: "ai_drafts", link: "https://github.com/10takla/ai_drafts" },
                                             { name: "ai_manager", link: "https://github.com/10takla/ai_manager" },
                                             { name: "impl_instrs", link: "https://github.com/10takla/impl_instrs" },
+                                            { name: "instr_styles", link: "https://github.com/10takla/instr_styles" }
                                         ].map((project, idx, arr) => (
                                             <Fragment key={project.name}>
                                                 <a href={project.link} target="_blank" rel="noreferrer">
