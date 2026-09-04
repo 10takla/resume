@@ -46,7 +46,7 @@ const AboutMe = (props: AboutMeProps, ref: ForwardedRef<ElRef>) => {
                         width: "1.4em",
                     }} />
                     <u>
-                        Rust<T ru="-разработчик" en=" Developer" />
+                        Rust & AI Engineer
                     </u>
                 </HStack>
                 {", "}

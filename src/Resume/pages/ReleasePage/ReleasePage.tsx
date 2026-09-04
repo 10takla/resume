@@ -63,7 +63,7 @@ const ReleasePage = (props: ReleasePageProps, ref: ForwardedRef<ElRef>) => {
                             // fill: "white",
                             width: "1.4em",
                         }} aria-hidden />
-                        <strong>Rust<T ru="-разработчик" en=" Developer" /></strong>
+                        <strong>Rust & AI Engineer</strong>
                     </HStack>
                     <AboutMe />
                     <Quote className={cls.quote} />

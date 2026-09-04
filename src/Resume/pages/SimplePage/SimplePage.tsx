@@ -180,7 +180,7 @@ const SimplePage = (props: SimplePageProps, ref: ForwardedRef<ElRef>) => {
                         // fill: "white",
                         width: "1.4em",
                     }} /> */}
-                    <strong>Rust<T ru="-разработчик" en=" Developer" /></strong>
+                    <strong>Rust & AI Engineer</strong>
                 </HStack>
                 <p>
                     {(() => {
